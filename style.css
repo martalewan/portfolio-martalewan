@@ -328,7 +328,8 @@ margin-right: auto;
     display: flex;
     flex-direction: column;
 }
-.work__text {
+.work__text,
+.title__text {
     padding-bottom: 120px;
     text-align: center;
 }
@@ -341,11 +342,16 @@ margin-right: auto;
 
 .work__img {
     padding-bottom: 60px;
-    max-width: 1300px;
+    max-width: 900px;
 }
 
 .l-main section {
     display: flex;
     margin-left: auto;
     margin-right: auto;
+}
+
+.title__text {
+    text-align: center;
+    font-weight: 800;
 }
