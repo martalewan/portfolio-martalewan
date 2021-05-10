@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 /*===== VARIABLES CSS =====*/
 :root{
-    --header-height: 3rem;
+    --header-height: 4.5rem;
     --font-medium: 500;
 }
 /*===== Colors =====*/
@@ -18,22 +18,22 @@
 :root{
     --body-font: 'Montserrat', sans-serif;
     --title-font: 'Playfair Display', serif;
-    --big-font-size: 40px;
-    --h2-font-size: 30px;
-    --normal-font-size: 15px;
-    --small-font-size: 12px;
+    --big-font-size: 60px;
+    --h2-font-size: 45px;
+    --normal-font-size: 22px;
+    --small-font-size: 18px;
 }
 @media screen and (min-width: 768px){
     :root{
-        --big-font-size: 48px;
-        --medium-font-size: 30px;
-        --normal-font-size: 15px;
-        --small-font-size: 12px;
+        --big-font-size: 63px;
+        --medium-font-size: 45px;
+        --normal-font-size: 22px;
+        --small-font-size: 18px;
     }
 }
 /*===== Margins =====*/
 :root{
-    --mb-4: 150px;
+    --mb-4: 225px;
 }
 /*===== z index =====*/
 :root{
@@ -105,7 +105,7 @@ img{
     justify-content: space-between;
     align-items: center;
     padding-left: var(--mb-4) ;
-    padding-right: 100px;
+    padding-right: 150px;
     background: rgba(248, 247, 237);
 }
 
@@ -133,11 +133,11 @@ img{
 .nav__link{
     position: relative;
     color: var(--dark-color);
-    margin-left: 20px;
+    margin-left: 30px;
 }
 .nav__link:hover{
     color: var(--first-color);
-    border-bottom: 1.5px solid grey;
+    border-bottom: 2px solid grey;
 }
 
 /*===== HOME =====*/
@@ -150,23 +150,23 @@ img{
     justify-content: space-between;
 }
 .home__container {
-    padding-top: 30px;
+    padding-top: 45px;
 }
 .top {
-    height: 1px;
+    height: 1.5px;
 }
 
 .home__img {
-    height: 300px;
+    height: 330px;
 }
 
 .flash {
-    width: 10px;
+    width: 15px;
 }
 
 .home__scroll {
     width: 100%;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 /*===== ABOUT =====*/
@@ -182,43 +182,43 @@ img{
     flex-direction: row;
     margin-left: 0;
     margin-right: auto;
+    padding-top: 100px;
 }
 
 .about__title {
-    padding-bottom: 30px;
+    padding-bottom: 45px;
 }
 .about__text {
     margin-right: auto;
-    max-width: 600px;
-    padding-bottom: 30px;
-    padding-right: 50px;
+    max-width: 900px;
+    padding-bottom: 45px;
+    padding-right: 75px;
 }
 .about__text2 {
-    max-width: 600px;
+    max-width: 900px;
     padding-right: auto;
 }
 
 .about__img,
 .img__container {
-    max-width: 350px;
+    max-width: 550px;
     z-index: 2;
 }
 
 .about__ills {
-    width: 150px;
+    width: 225px;
 }
 #lemon1 {
-    padding-top: 100px;
+    padding-top: 150px;
 }
 #lemon2 {
-    padding-top: 300px;
+    padding-top: 450px;
 }
 
 /*===== SKILLS =====*/
 
 .skills__box,
 .contact__box {
-    padding-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -239,12 +239,12 @@ img{
 .element__subtitle, 
 h5 {
     margin: 0;
-    font-size: 11px;
+    font-size: 16px;
 }
 .skills__subtitle,
 .skills__title,
 .element__subtitle {
-padding-bottom: 16px;
+padding-bottom: 24px;
 }
 
 
@@ -258,7 +258,7 @@ margin-right: auto;
 }
 
 .img__container {
-    padding-right: 30px;
+    padding-right: 45px;
     margin-right: auto;
 }
 
@@ -275,8 +275,8 @@ margin-right: auto;
 
 .footer {
     width: 100%;
-    padding-top: 40px;
-    padding-bottom: 20px;
+    padding-top: 60px;
+    padding-bottom: 30px;
 }
 
 .footer__container {
@@ -286,16 +286,16 @@ margin-right: auto;
 .portfolio,
 .work {
     position: relative;
-    margin-top: 80px;
+    margin-top: 120px;
     justify-items: center;
     display: flex;
-    max-width: 1400px;
+    max-width: 2100px;
 }
 
 .portfolio__img {
     position: relative;
     overflow: hidden;
-    margin: 9px 9px 9px 0px;
+    margin: 13px 13px 13px 0px;
 }
 
 .portfolio__link{
@@ -322,14 +322,14 @@ margin-right: auto;
 }
 
 .work {
-    padding: 100px 180px 0 180px ;
+    padding: 150px 270px 0 270px ;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 .work__text {
-    padding-bottom: 80px;
+    padding-bottom: 120px;
     text-align: center;
 }
 
@@ -340,8 +340,8 @@ margin-right: auto;
 }
 
 .work__img {
-    padding-bottom: 40px;
-    max-width: 750px;
+    padding-bottom: 60px;
+    max-width: 1300px;
 }
 
 .l-main section {
