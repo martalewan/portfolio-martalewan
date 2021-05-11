@@ -12,7 +12,7 @@
     --white-color: #fafaff;
     --light-color: rgb(248, 247, 237);
     --dark-color: #2a3b47;
-    --text-color: rgb(105, 116, 119);
+    --text-color: rgb(94, 104, 107);
 }
 /*===== Font and typo =====*/
 :root{
@@ -23,17 +23,17 @@
     --normal-font-size: 22px;
     --small-font-size: 18px;
 }
-@media screen and (min-width: 768px){
+/* @media screen and (max-width: 768px){
     :root{
-        --big-font-size: 63px;
-        --medium-font-size: 45px;
-        --normal-font-size: 22px;
-        --small-font-size: 18px;
+        --big-font-size: 40px;
+        --medium-font-size: 30px;
+        --normal-font-size: 15px;
+        --small-font-size: 9px;
     }
-}
+} */
 /*===== Margins =====*/
 :root{
-    --mb-4: 225px;
+    --mb-4: 10vw;
 }
 /*===== z index =====*/
 :root{
@@ -113,23 +113,6 @@ img{
     display: flex;
 }
 
-
-@media screen and (max-width: 768px){
-    .nav__menu{
-        position: fixed;
-        top: var(--header-height);
-        right: -100%;
-        width: 80%;
-        height: 100%;
-        padding: 2rem;
-        background-color: rgba(255,255,255,.3);
-        transition: .5s;
-        backdrop-filter: blur(10px);
-        display: flex;
-        flex-direction: row;
-    }
-}
-
 .nav__link{
     position: relative;
     color: var(--dark-color);
@@ -138,6 +121,46 @@ img{
 .nav__link:hover{
     color: var(--first-color);
     border-bottom: 2px solid grey;
+}
+
+.burger {
+    display: none;
+}
+.burger div {
+    width: 20px;
+    height: 2px;
+    margin: 5px;
+    background-color: var(--dark-color);
+}
+
+@media screen and (max-width: 768px){
+    .nav__list{
+        position: absolute;
+        top: 0;
+        width: 80vw;
+        height: 100vh;
+        padding: 30px;
+        background-color: var(--text-color);
+        color: grey;
+        transition: .5s;
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        z-index: 10000000000;
+        overflow: hidden;
+        margin-right: 20px;
+    }
+    .nav__link{
+        position: relative;
+        color: white;
+        margin-left: 30px;
+    }
+
+    body {
+        padding-left: 30px;
+        padding-right: 30px;
+        overflow: hidden;
+    }
 }
 
 /*===== HOME =====*/
@@ -237,7 +260,7 @@ img{
 .skills__subtitle,
 .skills__name,
 .element__subtitle, 
-h5 {
+h3 {
     margin: 0;
     font-size: 16px;
 }
@@ -328,9 +351,13 @@ margin-right: auto;
     display: flex;
     flex-direction: column;
 }
-.work__text,
-.title__text {
+.work__text {
     padding-bottom: 120px;
+    text-align: center;
+}
+
+.title__text {
+    padding-bottom: 30px;
     text-align: center;
 }
 
@@ -354,4 +381,10 @@ margin-right: auto;
 .title__text {
     text-align: center;
     font-weight: 800;
+}
+
+.work__gif {
+    width: 30px;
+    margin: auto;
+    padding-bottom: 10px;
 }
