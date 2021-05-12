@@ -461,9 +461,35 @@ margin-right: auto;
     }
 
     .socials,
-    .contact__info {
+    .contact__info,
+    .footer {
         width: 100%;
         text-align: center;
         margin-top: 32px;
+    }
+
+    .footer{
+       flex-direction: column;
+    }
+    .footer__container {
+        display: block;
+    }
+
+    .home__scroll-link {
+        display: none;
+    }
+    .about2__container {
+        padding-top: 10px;
+    }
+    .skills__subtitle, .skills__name, .element__subtitle, h3 {
+        padding-right: 12px;
+    }
+    .work__img {
+        width: 92vw;
+        margin: 0;
+    }
+    #work {
+        padding-left: 0;
+        padding-right: 0;
     }
 }

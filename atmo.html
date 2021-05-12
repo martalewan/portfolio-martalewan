@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marta Lewan</title>
-<link rel="icon" href="img/lemon.svg">
-
+    <link rel="icon" href="img/lemon.svg">
+    <script src="main.js"></script>
     <link rel="stylesheet" href="style.css">
     <meta property="og:title" content="Marta Lewan">
     <meta property="og:description" content="Marta Lewan">
@@ -26,13 +26,20 @@
             <div>
                 <a href="index.html" class="nav__logo">marta.lewan</a>
             </div>
-
             <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html" class="nav__link active">HOME</a></li>
-                    <li class="nav__item"><a href="index.html#about" class="nav__link">ABOUT</a></li>
-                    <li class="nav__item"><a href="index.html#contact" class="nav__link">CONTACT</a></li>
-                    <li class="nav__item"><a href="work.html" class="nav__link">WORK</a></li>
+                <div class="click-catcher" id="mainNavListClickCatcher" onclick="toggleNavList()"></div>
+                <div class="burger" onclick="toggleNavList()">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <ul class="nav__list" id="mainNavList">
+                    <li class="nav__item"><a href="#home" onclick="toggleNavList()" class="nav__link">HOME</a></li>
+                    <li class="nav__item"><a href="#about" onclick="toggleNavList()" class="nav__link">ABOUT</a></li>
+                    <li class="nav__item"><a href="#contact" onclick="toggleNavList()" class="nav__link">CONTACT</a>
+                    </li>
+                    <li class="nav__item"><a href="work.html" onclick="toggleNavList()" class="nav__link">WORK</a></li>
+                    <img class="nav__cancel" src="dasd" onclick="toggleNavList()">
                 </ul>
             </div>
         </nav>
@@ -67,7 +74,7 @@
             </div>
         </footer>
     </main>
-    
+
 </body>
 
 </html>
