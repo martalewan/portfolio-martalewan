@@ -119,7 +119,6 @@ img{
     top: 32px;
     right: 32px;
     cursor: pointer;
-    background-color: white;
 }
 
 .nav__link{
@@ -164,6 +163,9 @@ img{
     height: 2px;
     margin: 5px;
     background-color: var(--dark-color);
+}
+.nav__cancel {
+    width: 20px;
 }
 
 /*===== HOME =====*/
