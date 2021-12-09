@@ -18,10 +18,10 @@
 :root{
     --body-font: 'Montserrat', sans-serif;
     --title-font: 'Playfair Display', serif;
-    --big-font-size: 60px;
-    --h2-font-size: 45px;
-    --normal-font-size: 22px;
-    --small-font-size: 18px;
+    --big-font-size: 56px;
+    --h2-font-size: 39px;
+    --normal-font-size: 14.5px;
+    --small-font-size: 14.5px;
 }
 /* @media screen and (max-width: 768px){
     :root{
@@ -236,33 +236,33 @@ img{
 }
 
 .about__title {
-    padding-bottom: 45px;
+    padding-bottom: 33px;
 }
 .about__text {
     margin-right: auto;
-    max-width: 900px;
-    padding-bottom: 45px;
-    padding-right: 75px;
+    max-width: 710px;
+    padding-bottom: 28px;
+    padding-right: 45px;
 }
 .about__text2 {
-    max-width: 900px;
+    max-width: 850px;
     padding-right: auto;
 }
 
 .about__img,
 .img__container {
-    max-width: 550px;
+    max-width: 430px;
     z-index: 2;
 }
 
 .about__ills {
-    width: 225px;
+    width: 180px;
 }
 #lemon1 {
-    padding-top: 150px;
+    padding-top: 120px;
 }
 #lemon2 {
-    padding-top: 450px;
+    padding-top: 400px;
 }
 
 /*===== SKILLS =====*/
@@ -289,12 +289,12 @@ img{
 .element__subtitle, 
 h3 {
     margin: 0;
-    font-size: 16px;
+    font-size: 15px;
 }
 .skills__subtitle,
 .skills__title,
 .element__subtitle {
-padding-bottom: 24px;
+padding-bottom: 18px;
 }
 
 
@@ -481,7 +481,7 @@ margin-right: auto;
 
     .img__container {
         padding-right: 0px;
-        margin-bottom: 8px;
+        margin-bottom: 10px;
     }
 
     .skills__box, .contact__box {
