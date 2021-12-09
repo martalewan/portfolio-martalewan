@@ -23,14 +23,7 @@
     --normal-font-size: 14.5px;
     --small-font-size: 14.5px;
 }
-/* @media screen and (max-width: 768px){
-    :root{
-        --big-font-size: 40px;
-        --medium-font-size: 30px;
-        --normal-font-size: 15px;
-        --small-font-size: 9px;
-    }
-} */
+
 /*===== Margins =====*/
 :root{
     --mb-4: 10vw;
@@ -88,7 +81,6 @@ img{
 }
 
 /*===== LAYOUT =====*/
-
 .l-header{
     width: 100%;
     position: fixed;
@@ -165,7 +157,6 @@ img{
     left: 0px;
     width: 100%;
     height: 100%;
-
     opacity: 0;
     -webkit-touch-callout: none;
     cursor: pointer;
@@ -179,7 +170,6 @@ img{
     height: 100%;
     display: none;
 }
-
 .line {
     width: 20px;
     height: 2px;
@@ -231,7 +221,7 @@ img{
     flex-direction: row;
     margin-left: 0;
     margin-right: auto;
-    padding-top: 100px;
+    padding-top: 95px;
     flex-wrap: wrap;
 }
 
@@ -241,7 +231,7 @@ img{
 .about__text {
     margin-right: auto;
     max-width: 710px;
-    padding-bottom: 28px;
+    padding-bottom: 25px;
     padding-right: 45px;
 }
 .about__text2 {
@@ -251,7 +241,7 @@ img{
 
 .about__img,
 .img__container {
-    max-width: 430px;
+    max-width: 400px;
     z-index: 2;
 }
 
@@ -308,14 +298,17 @@ margin-right: auto;
 }
 
 .img__container {
-    padding-right: 45px;
-    margin-right: auto;
+    margin-right: 18px;
+    padding-right: 0px;
+    margin-bottom: 20px;
 }
 
 .italic {
     font-style: italic;
 }
-
+.contact__box {
+    padding-top: 10px;
+}
 .about2 {
     display: flex;
     flex-direction: column;
@@ -424,6 +417,11 @@ margin-right: auto;
     align-items: flex-start;
 }
 
+@media screen and (max-width: 1380px){
+#lemon2 {
+    display: none;
+}
+}
 @media screen and (max-width: 768px){
     .nav  {
         padding-left: 8px;
@@ -477,11 +475,6 @@ margin-right: auto;
 
     .about__ills {
         display: none;
-    }
-
-    .img__container {
-        padding-right: 0px;
-        margin-bottom: 10px;
     }
 
     .skills__box, .contact__box {
